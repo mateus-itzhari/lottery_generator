@@ -14,7 +14,7 @@ class _HomeState extends State<Home>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Gerador de Loteria")),
+      appBar: AppBar(title: const Text("Gerador de Loteria"), backgroundColor: Colors.indigo, centerTitle: true),
       body: const Center(child: Text("Gerador")),
     );
   }
