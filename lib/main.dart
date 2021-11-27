@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:core';
-
-import 'package:lottery_generator/View/home.dart';
+import 'package:lottery_generator/View/main_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget
   {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: MainPage(),
     );
   }
 }
