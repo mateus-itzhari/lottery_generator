@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:core';
 
-class MegaSena extends StatefulWidget
+class Timemania extends StatefulWidget
 {
-  const MegaSena({ Key? key }) : super(key: key);
+  const Timemania({ Key? key }) : super(key: key);
   @override
-  _MegaSenaState createState() => _MegaSenaState();
+  _TimemaniaState createState() => _TimemaniaState();
 }
 
-class _MegaSenaState extends State<MegaSena>
+class _TimemaniaState extends State<Timemania>
 {
   @override
   Widget build(BuildContext context)
   {
     return const Scaffold(
-      body: Center(child: Text("mega sena")),
+      body: Center(child: Text("timemania")),
       backgroundColor: Colors.white,    
     );
   }

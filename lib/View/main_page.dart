@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:lottery_generator/Global/my_services.dart';
+import 'package:lottery_generator/View/dia_de_sorte.dart';
+import 'package:lottery_generator/View/dupla_sena.dart';
 import 'dart:core';
 import 'package:lottery_generator/View/home.dart';
 import 'package:lottery_generator/View/info_app.dart';
 import 'package:lottery_generator/View/info_loteria.dart';
+import 'package:lottery_generator/View/lotofacil.dart';
+import 'package:lottery_generator/View/lotomania.dart';
+import 'package:lottery_generator/View/mega_sena.dart';
+import 'package:lottery_generator/View/quina.dart';
+import 'package:lottery_generator/View/super_sete.dart';
+import 'package:lottery_generator/View/timemania.dart';
 
 class MainPage extends StatefulWidget
 {
@@ -20,9 +28,17 @@ class _MainPageState extends State<MainPage>
   int _selectedIndex = 1;
   dynamic _header;
   static const List<Widget> _widgetOptions = [
-    InfoApp(),
-    Home(),
-    InfoLoteria()
+    InfoApp(), //index = 0
+    Home(), //index = 1
+    InfoLoteria(), //index = 2
+    MegaSena(), //index = 3
+    Lotofacil(), //index = 4
+    Quina(), //index = 5
+    Lotomania(), //index = 6
+    Timemania(), //index = 7
+    DuplaSena(), //index = 8
+    DiaDeSorte(), //index = 9
+    SuperSete() //index 10
   ];
   final MyService _myService = MyService();
   void _appBarTitle()
